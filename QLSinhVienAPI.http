@@ -1,0 +1,6 @@
+@QLSinhVienAPI_HostAddress = http://localhost:5065
+
+GET {{QLSinhVienAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
