@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.css",
+      "PackagePath": "staticwebassets/advance.css"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.html",
+      "PackagePath": "staticwebassets/advance.html"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.js",
+      "PackagePath": "staticwebassets/advance.js"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.css",
+      "PackagePath": "staticwebassets/dashboard.css"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.js",
+      "PackagePath": "staticwebassets/dashboard.js"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/languages.js",
+      "PackagePath": "staticwebassets/languages.js"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/navbar.js",
+      "PackagePath": "staticwebassets/navbar.js"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.css",
+      "PackagePath": "staticwebassets/sinhvien.css"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.html",
+      "PackagePath": "staticwebassets/sinhvien.html"
+    },
+    {
+      "Id": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.js",
+      "PackagePath": "staticwebassets/sinhvien.js"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.QLSinhVienAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.QLSinhVienAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.QLSinhVienAPI.props",
+      "PackagePath": "build\\QLSinhVienAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.QLSinhVienAPI.props",
+      "PackagePath": "buildMultiTargeting\\QLSinhVienAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.QLSinhVienAPI.props",
+      "PackagePath": "buildTransitive\\QLSinhVienAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

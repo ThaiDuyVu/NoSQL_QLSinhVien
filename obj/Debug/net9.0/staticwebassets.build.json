@@ -1,12 +1,3762 @@
 {
   "Version": 1,
-  "Hash": "axy21d3O0fbizWySoSyqKTqi5Vz3cJfMzfN8WWeoPd8=",
+  "Hash": "iks9kD+leS8J/3OZq8BlEHea3YFVtcnwf1wuWq2516g=",
   "Source": "QLSinhVienAPI",
   "BasePath": "_content/QLSinhVienAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "QLSinhVienAPI/wwwroot",
+      "Source": "QLSinhVienAPI",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/1ia1vu2f8m-22cn5ontox.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "dashboard#[.{fingerprint=22cn5ontox}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "qp638hjyhd",
+      "Integrity": "vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/4ga3oa16ty-9607quioot.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "advance#[.{fingerprint=9607quioot}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vhp5ikxeea",
+      "Integrity": "rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/8x9ubayrys-df3k5f0ej3.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "dashboard#[.{fingerprint=df3k5f0ej3}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "uz03vihtbe",
+      "Integrity": "NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.css"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/b0zdhgys9d-b8j2j8tdxq.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "navbar#[.{fingerprint=b8j2j8tdxq}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/navbar.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "af9ros49ik",
+      "Integrity": "dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/navbar.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cc6mdenlma-6e4xe5190c.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "sinhvien#[.{fingerprint=6e4xe5190c}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "p2kwgzs6hp",
+      "Integrity": "oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.html"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ccw8tpj056-781j12oij2.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "languages#[.{fingerprint=781j12oij2}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/languages.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "5yhv0502qi",
+      "Integrity": "Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/languages.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cv00tfhafb-fl3eqecq41.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "advance#[.{fingerprint=fl3eqecq41}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "occg1x8jkg",
+      "Integrity": "eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.html"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/jwmrvltgi5-1v9kp6865e.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "sinhvien#[.{fingerprint=1v9kp6865e}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "gvo44nbf6a",
+      "Integrity": "FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.css"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/r35jl602a3-budoynpx29.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "sinhvien#[.{fingerprint=budoynpx29}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "gqk9kx4bq8",
+      "Integrity": "OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ynrb4oqk8t-1f9d8zqzy4.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "advance#[.{fingerprint=1f9d8zqzy4}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "gjrhzre896",
+      "Integrity": "VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.css"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/zu2vrpbfwr-eat3zocp8s.gz",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "index#[.{fingerprint=eat3zocp8s}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "1skjqy0ky4",
+      "Integrity": "D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.css",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "advance#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1f9d8zqzy4",
+      "Integrity": "E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/advance.css"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.html",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "advance#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fl3eqecq41",
+      "Integrity": "TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/advance.html"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.js",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "advance#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9607quioot",
+      "Integrity": "oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/advance.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.css",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "df3k5f0ej3",
+      "Integrity": "p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/dashboard.css"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.js",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "22cn5ontox",
+      "Integrity": "ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/dashboard.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/index.html",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eat3zocp8s",
+      "Integrity": "+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/languages.js",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "languages#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "781j12oij2",
+      "Integrity": "CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/languages.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/navbar.js",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "navbar#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b8j2j8tdxq",
+      "Integrity": "JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/navbar.js"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.css",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "sinhvien#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1v9kp6865e",
+      "Integrity": "7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/sinhvien.css"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.html",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "sinhvien#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6e4xe5190c",
+      "Integrity": "ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/sinhvien.html"
+    },
+    {
+      "Identity": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.js",
+      "SourceId": "QLSinhVienAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/",
+      "BasePath": "_content/QLSinhVienAPI",
+      "RelativePath": "sinhvien#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "budoynpx29",
+      "Integrity": "E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/sinhvien.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "advance.1f9d8zqzy4.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ynrb4oqk8t-1f9d8zqzy4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000325309044"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3073"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1f9d8zqzy4"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU="
+        }
+      ]
+    },
+    {
+      "Route": "advance.1f9d8zqzy4.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1f9d8zqzy4"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU="
+        }
+      ]
+    },
+    {
+      "Route": "advance.1f9d8zqzy4.css.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ynrb4oqk8t-1f9d8zqzy4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1f9d8zqzy4"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g="
+        }
+      ]
+    },
+    {
+      "Route": "advance.9607quioot.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/4ga3oa16ty-9607quioot.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000205423172"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4867"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:08:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9607quioot"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI="
+        }
+      ]
+    },
+    {
+      "Route": "advance.9607quioot.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:08:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9607quioot"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI="
+        }
+      ]
+    },
+    {
+      "Route": "advance.9607quioot.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/4ga3oa16ty-9607quioot.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:08:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9607quioot"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM="
+        }
+      ]
+    },
+    {
+      "Route": "advance.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ynrb4oqk8t-1f9d8zqzy4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000325309044"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3073"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU="
+        }
+      ]
+    },
+    {
+      "Route": "advance.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16468"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E7uoKNwWI1SbHkmuWxS6ttYkNuxWRHioGpnV3SU6XaU="
+        }
+      ]
+    },
+    {
+      "Route": "advance.css.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ynrb4oqk8t-1f9d8zqzy4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3073"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:07:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VCsdO90fxpfbo48PiukSr5ZuwdzOLwCDcBGd285hP+g="
+        }
+      ]
+    },
+    {
+      "Route": "advance.fl3eqecq41.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cv00tfhafb-fl3eqecq41.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000355239787"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2814"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 10:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fl3eqecq41"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s="
+        }
+      ]
+    },
+    {
+      "Route": "advance.fl3eqecq41.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 10:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fl3eqecq41"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s="
+        }
+      ]
+    },
+    {
+      "Route": "advance.fl3eqecq41.html.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cv00tfhafb-fl3eqecq41.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 10:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fl3eqecq41"
+        },
+        {
+          "Name": "label",
+          "Value": "advance.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM="
+        }
+      ]
+    },
+    {
+      "Route": "advance.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cv00tfhafb-fl3eqecq41.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000355239787"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2814"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 10:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s="
+        }
+      ]
+    },
+    {
+      "Route": "advance.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19644"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 10:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TWTHB8OX6tK7hhhRni5tLaZPmmb6LDWtg1OW9uyG06s="
+        }
+      ]
+    },
+    {
+      "Route": "advance.html.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cv00tfhafb-fl3eqecq41.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2814"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 10:23:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eFjQ0/vffCCa9eGOTgjlazY+c3ehwlMhOnlS7MVjedM="
+        }
+      ]
+    },
+    {
+      "Route": "advance.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/4ga3oa16ty-9607quioot.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000205423172"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4867"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:08:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI="
+        }
+      ]
+    },
+    {
+      "Route": "advance.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/advance.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:08:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oa5fMIbyGVpIznmfDGU45SwpE+PQeMkSY6SRH2T4nPI="
+        }
+      ]
+    },
+    {
+      "Route": "advance.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/4ga3oa16ty-9607quioot.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 11:08:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rT2Lbq1mOKvsNfE4SCFxu6xZXa/qOxgDjUBfT/P/vXM="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.22cn5ontox.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/1ia1vu2f8m-22cn5ontox.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000588581519"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1698"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "22cn5ontox"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.22cn5ontox.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "22cn5ontox"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.22cn5ontox.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/1ia1vu2f8m-22cn5ontox.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1698"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "22cn5ontox"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/8x9ubayrys-df3k5f0ej3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000669792364"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1492"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.css.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/8x9ubayrys-df3k5f0ej3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.df3k5f0ej3.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/8x9ubayrys-df3k5f0ej3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000669792364"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1492"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "df3k5f0ej3"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.df3k5f0ej3.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4735"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "df3k5f0ej3"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3D7c07SFJuYIHxJ1jAfqQ5qXcJrimrTfJOqxn53AmQ="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.df3k5f0ej3.css.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/8x9ubayrys-df3k5f0ej3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "df3k5f0ej3"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NoFjmVRfv3HZO46/3Ud1s9z0huO723tZ8oFDEBOE2LY="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/1ia1vu2f8m-22cn5ontox.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000588581519"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1698"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ytHTELHPJ1QY5xHtPXB18AsNJofu1mxCupl8LQiC+ng="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/1ia1vu2f8m-22cn5ontox.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1698"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:31:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vuB750YyRlALQ2uZi7pp3HbSOCeJmH4ka3qHOiGpVDQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.eat3zocp8s.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/zu2vrpbfwr-eat3zocp8s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000697836706"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1432"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eat3zocp8s"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E="
+        }
+      ]
+    },
+    {
+      "Route": "index.eat3zocp8s.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eat3zocp8s"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E="
+        }
+      ]
+    },
+    {
+      "Route": "index.eat3zocp8s.html.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/zu2vrpbfwr-eat3zocp8s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eat3zocp8s"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/zu2vrpbfwr-eat3zocp8s.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000697836706"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1432"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6712"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+uV7r3RNkN3ObGN4KQwCSMKR1S8WWO0IIi30UGJWF7E="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/zu2vrpbfwr-eat3zocp8s.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1432"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:37:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D+4O0EU1y+uoPgKIYChtlskFs57blNa8UAm7QH6VxME="
+        }
+      ]
+    },
+    {
+      "Route": "languages.781j12oij2.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ccw8tpj056-781j12oij2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001156069364"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "864"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 09:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "781j12oij2"
+        },
+        {
+          "Name": "label",
+          "Value": "languages.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI="
+        }
+      ]
+    },
+    {
+      "Route": "languages.781j12oij2.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/languages.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 09:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "781j12oij2"
+        },
+        {
+          "Name": "label",
+          "Value": "languages.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI="
+        }
+      ]
+    },
+    {
+      "Route": "languages.781j12oij2.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ccw8tpj056-781j12oij2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "864"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 09:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "781j12oij2"
+        },
+        {
+          "Name": "label",
+          "Value": "languages.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4="
+        }
+      ]
+    },
+    {
+      "Route": "languages.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ccw8tpj056-781j12oij2.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001156069364"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "864"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 09:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI="
+        }
+      ]
+    },
+    {
+      "Route": "languages.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/languages.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 09:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CYp+ULddIWWMh1+puwshvOvgHEChTWphy9zvZyICLWI="
+        }
+      ]
+    },
+    {
+      "Route": "languages.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/ccw8tpj056-781j12oij2.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "864"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 09:58:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y99V6wWDDxvxZm9yOE1LbhY2Z+jlpAOqdBTgjL2GkI4="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.b8j2j8tdxq.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/b0zdhgys9d-b8j2j8tdxq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000877192982"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 05:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b8j2j8tdxq"
+        },
+        {
+          "Name": "label",
+          "Value": "navbar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.b8j2j8tdxq.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/navbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 05:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b8j2j8tdxq"
+        },
+        {
+          "Name": "label",
+          "Value": "navbar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.b8j2j8tdxq.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/b0zdhgys9d-b8j2j8tdxq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 05:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b8j2j8tdxq"
+        },
+        {
+          "Name": "label",
+          "Value": "navbar.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/b0zdhgys9d-b8j2j8tdxq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000877192982"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 05:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/navbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 05:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JQ8bsCl8dQil+1PxlCMdIB37CrZsa3yqn4ZVrJtvDDY="
+        }
+      ]
+    },
+    {
+      "Route": "navbar.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/b0zdhgys9d-b8j2j8tdxq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1139"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 05:00:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dvCC3mCPKskzGKbxtcwa9kjaZUlagoe/eoZmVpzS9mY="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.1v9kp6865e.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/jwmrvltgi5-1v9kp6865e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000571102227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1750"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1v9kp6865e"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.1v9kp6865e.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1v9kp6865e"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.1v9kp6865e.css.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/jwmrvltgi5-1v9kp6865e.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1750"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1v9kp6865e"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.6e4xe5190c.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cc6mdenlma-6e4xe5190c.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000836820084"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1194"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6e4xe5190c"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.6e4xe5190c.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6e4xe5190c"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.6e4xe5190c.html.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cc6mdenlma-6e4xe5190c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6e4xe5190c"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.budoynpx29.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/r35jl602a3-budoynpx29.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000332889481"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3003"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "budoynpx29"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.budoynpx29.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15439"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "budoynpx29"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.budoynpx29.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/r35jl602a3-budoynpx29.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "budoynpx29"
+        },
+        {
+          "Name": "label",
+          "Value": "sinhvien.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/jwmrvltgi5-1v9kp6865e.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000571102227"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1750"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.css",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5629"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7f/JNaBFnTpihU80XKpnbGi5TUNRzie0RnBU0WcR/JU="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.css.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/jwmrvltgi5-1v9kp6865e.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1750"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FPlXPhaT8vG+u05uCJlLuIuyDCiLczGl5Cf2gELW0KQ="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cc6mdenlma-6e4xe5190c.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000836820084"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1194"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.html",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ghmd2FwI2jbEIZMCQKlihCWC+Owk1jjcyRgxL9apxts="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.html.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/cc6mdenlma-6e4xe5190c.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oemlUAUQmaog+dBb81t1Ql7YxeA3IylMi6GemyXW1Ts="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/r35jl602a3-budoynpx29.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000332889481"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3003"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.js",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/wwwroot/sinhvien.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15439"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E0oCuK7HUJkRzDALlCn6h3pmAxPHGbmDrL9K2l6qTXg="
+        }
+      ]
+    },
+    {
+      "Route": "sinhvien.js.gz",
+      "AssetFile": "/Users/thaivu/Documents/LapTrinh/HUIT-YEAR4/NoSQL/Workspace/Buoi2/BTNhom/QLSinhVienAPI/obj/Debug/net9.0/compressed/r35jl602a3-budoynpx29.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3003"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Aug 2026 04:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OImZ6TvXJDs6vtIGgQXvUNsJ0RARfs9B+9A4alMqpWs="
+        }
+      ]
+    }
+  ]
 }

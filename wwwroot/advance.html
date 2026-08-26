@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Thao tác nâng cao - Quản lý sinh viên</title>
+
+    <link
+        rel="stylesheet"
+        href="advance.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         NAVBAR DÙNG CHUNG
+    ====================================================== -->
+
+    <div id="navbar-container"></div>
+
+
+    <!-- =====================================================
+         MAIN PAGE
+    ====================================================== -->
+
+    <main class="page">
+
+        <!-- =================================================
+             PAGE HEADER
+        ================================================== -->
+
+        <header class="page-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    MongoDB nâng cao
+                </p>
+
+                <h1>
+                    Thao tác nâng cao
+                </h1>
+
+                <p class="subtitle">
+                    Thực hiện các thao tác cập nhật mảng,
+                    cập nhật phần tử và thay thế Document trong MongoDB.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             TOAST
+        ================================================== -->
+
+        <div
+            id="toast"
+            class="toast"
+            role="status">
+        </div>
+
+
+        <!-- =================================================
+             TRA CỨU SINH VIÊN
+        ================================================== -->
+
+        <section class="panel lookup-panel">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Tra cứu
+                    </p>
+
+                    <h2>
+                        Tra cứu sinh viên
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="search-masv"
+                    placeholder="Nhập mã sinh viên, ví dụ: sv001">
+
+                <button
+                    type="button"
+                    id="lookup-button"
+                    class="button primary">
+
+                    Tra cứu
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 THÔNG TIN SINH VIÊN
+            ================================================== -->
+
+            <div
+                id="student-info"
+                class="student-info"
+                style="display: none;">
+
+                <div class="info-grid">
+
+                    <!-- _id -->
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            _id MongoDB
+                        </span>
+
+                        <strong id="info-id">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Mã sinh viên -->
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Mã sinh viên
+                        </span>
+
+                        <strong id="info-masv">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Họ tên -->
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Họ tên
+                        </span>
+
+                        <strong id="info-hoten">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Mã lớp -->
+
+                    <div class="info-item">
+
+                        <span class="info-label">
+                            Mã lớp
+                        </span>
+
+                        <strong id="info-malop">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Ngoại ngữ -->
+
+                    <div class="info-item info-wide">
+
+                        <span class="info-label">
+                            Ngoại ngữ hiện có
+                        </span>
+
+                        <strong id="info-ngoaingu">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         DANH SÁCH MÔN HỌC CHI TIẾT
+                    ================================================== -->
+
+                    <div class="info-item info-wide">
+
+                        <span class="info-label">
+                            Danh sách môn học
+                        </span>
+
+                        <div
+                            id="info-monhoc"
+                            class="course-detail-list">
+
+                            <div class="empty-state">
+                                Chưa có môn học.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ADVANCED OPERATIONS
+        ================================================== -->
+
+        <section class="operation-grid">
+
+
+            <!-- =================================================
+                 1. ADD LANGUAGE
+            ================================================== -->
+
+            <article class="panel operation-card">
+
+                <div class="operation-header">
+
+                    <div class="operation-icon success">
+                        +
+                    </div>
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Array Update
+                        </p>
+
+                        <h2>
+                            Bổ sung ngoại ngữ
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="operation-description">
+
+                    Sử dụng MongoDB
+                    <code>$addToSet</code>
+                    để bổ sung ngoại ngữ và tránh
+                    phần tử bị trùng lặp.
+
+                </p>
+
+
+                <!-- =============================================
+                     MÃ SINH VIÊN
+                ============================================== -->
+
+                <div class="form-group">
+
+                    <label for="lang-masv">
+                        Mã sinh viên
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lang-masv"
+                        placeholder="VD: sv001">
+
+                </div>
+
+
+                <!-- =============================================
+                     CHECKLIST NGOẠI NGỮ
+                ============================================== -->
+
+                <div class="form-group">
+
+                    <div class="section-label-row">
+
+                        <label>
+                            Chọn ngoại ngữ
+                        </label>
+
+                        <span class="helper-text">
+                            Có thể chọn nhiều
+                        </span>
+
+                    </div>
+
+
+                    <!--
+                        languages.js sẽ render danh sách
+                        ngoại ngữ hợp lệ vào đây.
+                    -->
+
+                    <div
+                        id="language-checklist"
+                        class="checklist">
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     DANH SÁCH NGOẠI NGỮ ĐÃ CHỌN
+                ============================================== -->
+
+                <div class="form-group">
+
+                    <div class="section-label-row">
+
+                        <label>
+                            Ngoại ngữ sẽ bổ sung
+                        </label>
+
+                        <span
+                            id="language-count"
+                            class="count-badge">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="selected-languages"
+                        class="selected-list">
+
+                        <div class="empty-state">
+                            Chưa chọn ngoại ngữ nào.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     BUTTON ADD LANGUAGE
+                ============================================== -->
+
+                <button
+                    type="button"
+                    id="add-language-button"
+                    class="button success">
+
+                    + Thêm ngoại ngữ
+
+                </button>
+
+            </article>
+
+
+            <!-- =================================================
+                 2. ADD COURSE
+            ================================================== -->
+
+            <article class="panel operation-card">
+
+                <div class="operation-header">
+
+                    <div class="operation-icon success">
+                        +
+                    </div>
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Array Update
+                        </p>
+
+                        <h2>
+                            Thêm môn học mới
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="operation-description">
+
+                    Sử dụng MongoDB
+                    <code>$push</code>
+                    để thêm nhiều môn học vào mảng
+                    <code>MonHoc</code>.
+
+                </p>
+
+
+                <!-- =============================================
+                     MÃ SINH VIÊN
+                ============================================== -->
+
+                <div class="form-group">
+
+                    <label for="course-masv">
+                        Mã sinh viên
+                    </label>
+
+                    <input
+                        type="text"
+                        id="course-masv"
+                        placeholder="VD: sv001">
+
+                </div>
+
+
+                <!-- =============================================
+                     NHẬP MÔN HỌC
+                ============================================== -->
+
+                <div
+                    id="course-input-area"
+                    class="course-input-area">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="course-mamon">
+                                Mã môn
+                            </label>
+
+                            <input
+                                type="text"
+                                id="course-mamon"
+                                placeholder="VD: CS101">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="course-tenmon">
+                                Tên môn
+                            </label>
+
+                            <input
+                                type="text"
+                                id="course-tenmon"
+                                placeholder="VD: MongoDB">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="course-diem">
+                            Điểm số
+                        </label>
+
+                        <input
+                            type="number"
+                            id="course-diem"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            placeholder="8.5">
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="add-course-item-button"
+                        class="button secondary">
+
+                        + Thêm môn vào danh sách
+
+                    </button>
+
+                </div>
+
+
+                <!-- =============================================
+                     DANH SÁCH MÔN HỌC
+                ============================================== -->
+
+                <div class="form-group">
+
+                    <div class="section-label-row">
+
+                        <label>
+                            Danh sách môn học sẽ bổ sung
+                        </label>
+
+                        <span
+                            id="course-count"
+                            class="count-badge">
+
+                            0
+
+                        </span>
+
+                    </div>
+
+
+                    <div
+                        id="selected-courses"
+                        class="selected-list course-list">
+
+                        <div class="empty-state">
+                            Chưa có môn học nào.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =============================================
+                     BUTTON ADD COURSES
+                ============================================== -->
+
+                <button
+                    type="button"
+                    id="add-courses-button"
+                    class="button success">
+
+                    Thêm các môn học
+
+                </button>
+
+            </article>
+
+
+            <!-- =================================================
+                 3. UPDATE SCORE
+            ================================================== -->
+
+            <article class="panel operation-card">
+
+                <div class="operation-header">
+
+                    <div class="operation-icon warning">
+                        ↻
+                    </div>
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Positional Operator
+                        </p>
+
+                        <h2>
+                            Cập nhật điểm môn học
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="operation-description">
+
+                    Sử dụng Positional Operator
+                    <code>$</code>
+                    để cập nhật điểm của một phần tử
+                    trong mảng môn học.
+
+                </p>
+
+
+                <form
+                    id="form-update-score"
+                    class="operation-form">
+
+
+                    <!-- Mã sinh viên -->
+
+                    <label for="score-masv">
+
+                        Mã sinh viên
+
+                        <input
+                            type="text"
+                            id="score-masv"
+                            placeholder="VD: sv001"
+                            required>
+
+                    </label>
+
+
+                    <!-- Mã môn -->
+
+                    <label for="score-mamon">
+
+                        Mã môn cần sửa
+
+                        <input
+                            type="text"
+                            id="score-mamon"
+                            placeholder="VD: CS101"
+                            required>
+
+                    </label>
+
+
+                    <!-- Điểm -->
+
+                    <label for="score-diem">
+
+                        Điểm mới
+
+                        <input
+                            type="number"
+                            id="score-diem"
+                            min="0"
+                            max="10"
+                            step="0.1"
+                            placeholder="9.0"
+                            required>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="button warning">
+
+                        Cập nhật điểm
+
+                    </button>
+
+                </form>
+
+            </article>
+
+
+            <!-- =================================================
+                 4. REPLACE DOCUMENT
+            ================================================== -->
+
+            <article class="panel operation-card">
+
+                <div class="operation-header">
+
+                    <div class="operation-icon danger">
+                        ⟳
+                    </div>
+
+                    <div>
+
+                        <p class="eyebrow">
+                            Document Update
+                        </p>
+
+                        <h2>
+                            Replace Document
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="operation-description">
+
+                    Thay thế toàn bộ Document MongoDB
+                    bằng dữ liệu JSON mới thông qua
+                    <code>replaceOne</code>.
+
+                </p>
+
+
+                <form
+                    id="form-replace-doc"
+                    class="operation-form">
+
+
+                    <!-- _id -->
+
+                    <label for="replace-id">
+
+                        _id MongoDB
+
+                        <input
+                            type="text"
+                            id="replace-id"
+                            placeholder="MongoDB ObjectId"
+                            required>
+
+                    </label>
+
+
+                    <!-- JSON -->
+
+                    <label for="replace-json">
+
+                        Nội dung JSON mới
+
+                        <textarea
+                            id="replace-json"
+                            rows="10"
+                            placeholder='{
+  "maSV": "sv001",
+  "hoTen": "Nguyễn Văn A",
+  "tuoi": 21,
+  "phai": "Nam",
+  "maLop": "CNTT1",
+  "ngoaiNgu": [],
+  "monHoc": []
+}'
+                            required></textarea>
+
+                    </label>
+
+
+                    <!-- WARNING -->
+
+                    <div class="warning-box">
+
+                        <strong>
+                            Lưu ý
+                        </strong>
+
+                        <span>
+                            Replace Document sẽ thay thế toàn bộ
+                            nội dung Document hiện tại.
+                        </span>
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="button danger">
+
+                        Replace Document
+
+                    </button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <!-- Navbar -->
+    <script src="navbar.js"></script>
+
+    <!-- Danh sách ngoại ngữ hợp lệ -->
+    <script src="languages.js"></script>
+
+    <!-- Logic trang Advance -->
+    <script src="advance.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Quản lý sinh viên</title>
+
+    <link
+        rel="stylesheet"
+        href="sinhvien.css">
+
+</head>
+
+<body>
+
+<div id="navbar-container"></div>
+
+
+<main class="page">
+
+    <header class="page-header">
+
+        <div>
+
+            <p class="eyebrow">
+                Quản lý sinh viên
+            </p>
+
+            <h1>
+                Danh sách sinh viên
+            </h1>
+
+            <p class="subtitle">
+                Thêm, cập nhật, tìm kiếm và xóa sinh viên.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- FORM -->
+
+        <section class="card form-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Thông tin
+                    </p>
+
+                    <h2>
+                        Sinh viên
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <label for="masv">
+                Mã SV
+            </label>
+
+            <input
+                type="text"
+                id="masv"
+                placeholder="sv001">
+
+
+            <label for="hoten">
+                Họ tên
+            </label>
+
+            <input
+                type="text"
+                id="hoten"
+                placeholder="Nguyễn Văn A">
+
+
+            <label for="tuoi">
+                Tuổi
+            </label>
+
+            <input
+                type="number"
+                id="tuoi"
+                min="1"
+                value="18">
+
+
+            <label for="phai">
+                Giới tính
+            </label>
+
+            <select id="phai">
+
+                <option value="Nam">
+                    Nam
+                </option>
+
+                <option value="Nữ">
+                    Nữ
+                </option>
+
+            </select>
+
+
+            <label for="malop">
+                Mã lớp
+            </label>
+
+            <input
+                type="text"
+                id="malop"
+                placeholder="l01">
+
+
+            <!-- NGOẠI NGỮ -->
+            <!-- MÔN HỌC -->
+            <!-- ACTIONS -->
+
+            <div class="actions">
+
+                <button
+                    class="btn btn-primary"
+                    onclick="createSinhVien()">
+
+                    Thêm mới
+
+                </button>
+
+                <button
+                    class="btn btn-success"
+                    onclick="updateSinhVien()">
+
+                    Cập nhật
+
+                </button>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="clearForm()">
+
+                    Làm mới
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIST -->
+
+        <section class="card list-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        Dữ liệu
+                    </p>
+
+                    <h2>
+                        Danh sách sinh viên
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="toolbar">
+
+                <input
+                    type="text"
+                    id="filterLop"
+                    placeholder="Lọc theo mã lớp...">
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="filterByLop()">
+
+                    Lọc
+
+                </button>
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="loadAll()">
+
+                    Tải toàn bộ
+
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+
+                        <th>Mã SV</th>
+                        <th>Họ tên</th>
+                        <th>Tuổi</th>
+                        <th>Giới tính</th>
+                        <th>Lớp</th>
+                        <th>Ngoại ngữ</th>
+                        <th>Môn học</th>
+                        <th>Xóa</th>
+
+                    </tr>
+
+                    </thead>
+
+                    <tbody id="tbody"></tbody>
+
+                </table>
+
+            </div>
+
+
+            <div
+                id="emptyMsg"
+                class="empty-msg"
+                style="display:none;">
+
+                Chưa có sinh viên nào.
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<div
+    id="toast"
+    class="toast">
+</div>
+
+
+<script src="navbar.js"></script>
+<script src="sinhvien.js"></script>
+
+</body>
+</html>

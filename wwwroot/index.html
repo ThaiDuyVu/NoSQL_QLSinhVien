@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dashboard quản lý sinh viên</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div id="navbar-container"></div>
+
+<main class="page">
+
+    <header class="page-header">
+
+        <div>
+            <p class="eyebrow">Quản lý sinh viên</p>
+
+            <h1>Dashboard thống kê</h1>
+
+            <p class="subtitle">
+                Theo dõi nhanh tình hình sinh viên và kết quả học tập.
+            </p>
+        </div>
+
+        <button
+            id="refresh-button"
+            class="button primary"
+            type="button">
+            Làm mới dữ liệu
+        </button>
+
+    </header>
+
+
+    <p
+        id="status-message"
+        class="status"
+        role="status">
+        Đang tải dữ liệu...
+    </p>
+
+
+    <!-- KPI -->
+    <section
+        class="kpi-grid"
+        aria-label="Chỉ số tổng quan">
+
+        <article class="kpi-card">
+            <span>Tổng sinh viên</span>
+            <strong id="total-students">-</strong>
+        </article>
+
+        <article class="kpi-card">
+            <span>Tổng số lớp</span>
+            <strong id="total-classes">-</strong>
+        </article>
+
+        <article class="kpi-card">
+            <span>Điểm trung bình</span>
+            <strong id="average-score">-</strong>
+        </article>
+
+        <article class="kpi-card">
+            <span>Tỷ lệ Nam</span>
+            <strong id="male-percentage">-</strong>
+        </article>
+
+        <article class="kpi-card">
+            <span>Tỷ lệ Nữ</span>
+            <strong id="female-percentage">-</strong>
+        </article>
+
+    </section>
+
+
+    <!-- GIỚI TÍNH + HỌC LỰC -->
+    <section class="content-grid two-columns">
+
+        <article class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="eyebrow">Giới tính</p>
+                    <h2>Tỷ lệ Nam và Nữ</h2>
+                </div>
+
+            </div>
+
+            <div class="gender-summary">
+
+                <div class="gender-row">
+
+                    <div class="row-label">
+                        <span class="dot male"></span>
+
+                        <span>Nam</span>
+
+                        <strong id="male-label">-</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span
+                            id="male-bar"
+                            class="male">
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="gender-row">
+
+                    <div class="row-label">
+                        <span class="dot female"></span>
+
+                        <span>Nữ</span>
+
+                        <strong id="female-label">-</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span
+                            id="female-bar"
+                            class="female">
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="eyebrow">Học lực</p>
+                    <h2>Phân loại sinh viên</h2>
+                </div>
+
+            </div>
+
+            <div
+                id="grade-chart"
+                class="bar-chart">
+
+                <p class="empty">
+                    Đang tải...
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- THỐNG KÊ LỚP + NGOẠI NGỮ -->
+    <section class="content-grid two-columns">
+
+        <article class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="eyebrow">Theo lớp</p>
+                    <h2>Thống kê sinh viên theo lớp</h2>
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                    <tr>
+                        <th>Mã lớp</th>
+                        <th>Sĩ số</th>
+                        <th>Điểm TB cao nhất</th>
+                        <th>Điểm TB thấp nhất</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="classes-table">
+
+                    <tr>
+                        <td
+                            colspan="4"
+                            class="empty">
+                            Đang tải...
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </article>
+
+
+        <article class="panel">
+
+            <div class="panel-heading">
+
+                <div>
+                    <p class="eyebrow">Ngoại ngữ</p>
+                    <h2>Mức độ phổ biến</h2>
+                </div>
+
+            </div>
+
+            <div
+                id="language-chart"
+                class="bar-chart">
+
+                <p class="empty">
+                    Đang tải...
+                </p>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- TOP 5 -->
+    <section class="panel">
+
+        <div class="panel-heading">
+
+            <div>
+                <p class="eyebrow">Xếp hạng</p>
+
+                <h2>
+                    Top 5 sinh viên có điểm trung bình cao nhất
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table>
+
+                <thead>
+
+                <tr>
+                    <th>Hạng</th>
+                    <th>Mã sinh viên</th>
+                    <th>Họ tên</th>
+                    <th>Mã lớp</th>
+                    <th>Điểm trung bình</th>
+                </tr>
+
+                </thead>
+
+                <tbody id="top-students-table">
+
+                <tr>
+                    <td
+                        colspan="5"
+                        class="empty">
+                        Đang tải...
+                    </td>
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="navbar.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>
