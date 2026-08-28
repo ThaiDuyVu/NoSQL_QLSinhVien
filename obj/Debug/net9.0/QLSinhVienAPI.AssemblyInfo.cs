@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QLSinhVienAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+912e3add9c5c6c3143c6c79d5d9498953b9a6b5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7dd251198b053e0535aaacab918ffca4b13d6a20")]
 [assembly: System.Reflection.AssemblyProductAttribute("QLSinhVienAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QLSinhVienAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
