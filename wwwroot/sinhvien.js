@@ -1,9 +1,8 @@
 const API = "/api/sinhvien";
 
-
-// currentEditingId lưu maSV
-// API route sử dụng mã sinh viên:
-// /api/sinhvien/{masv}
+// =====================================================
+// CURRENT EDITING
+// =====================================================
 
 let currentEditingId = null;
 
@@ -38,61 +37,90 @@ function showToast(
 
 
 // =====================================================
-// NGOẠI NGỮ
+// ESCAPE HTML
 // =====================================================
 
-function addNgoaiNguRow(
-    value = ""
-) {
+function escapeHtml(str) {
 
-    const wrap =
-        document.getElementById(
-            "ngoaingu-list"
+    return String(str)
+        .replace(
+            /[&<>"']/g,
+            character => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;"
+            }[character])
         );
-
-    const row =
-        document.createElement("div");
-
-    row.className =
-        "row-inline";
-
-    row.innerHTML = `
-        <input
-            type="text"
-            class="ngoaingu-input"
-            placeholder="VD: Tiếng Anh"
-            value="${escapeHtml(value)}"
-        />
-
-        <button
-            type="button"
-            class="btn btn-x"
-            onclick="this.parentElement.remove()">
-
-            ✕
-
-        </button>
-    `;
-
-    wrap.appendChild(row);
 }
 
 
-function getNgoaiNguList() {
+// =====================================================
+// FORM
+// =====================================================
 
-    return [
-        ...document.querySelectorAll(
-            ".ngoaingu-input"
-        )
-    ]
-        .map(
-            input =>
-                input.value.trim()
-        )
-        .filter(
-            value =>
-                value !== ""
+function clearForm() {
+
+    document.getElementById("masv").value = "";
+    document.getElementById("masv").disabled = false;
+
+    document.getElementById("hoten").value = "";
+
+    document.getElementById("tuoi").value = 18;
+
+    document.getElementById("phai").value = "Nam";
+
+    document.getElementById("malop").value = "";
+
+    document.getElementById("monhoc-list").innerHTML = "";
+
+    currentEditingId = null;
+}
+
+
+function validateBasicInput() {
+
+    const maSV =
+        currentEditingId ||
+        document.getElementById("masv").value.trim();
+
+    const hoTen =
+        document
+            .getElementById("hoten")
+            .value
+            .trim();
+
+    const tuoi =
+        parseInt(
+            document
+                .getElementById("tuoi")
+                .value,
+            10
         );
+
+    if (!maSV || !hoTen) {
+
+        throw new Error(
+            "Vui lòng nhập đầy đủ Mã SV và Họ tên."
+        );
+    }
+
+    if (
+        isNaN(tuoi) ||
+        tuoi <= 0
+    ) {
+
+        throw new Error(
+            "Tuổi phải là số nguyên dương."
+        );
+    }
+
+    return {
+        maSV,
+        hoTen,
+        tuoi
+    };
 }
 
 
@@ -152,7 +180,6 @@ function addMonHocRow(
             ✕
 
         </button>
-
     `;
 
     wrap.appendChild(row);
@@ -168,44 +195,32 @@ function getMonHocList() {
 
     const list = [];
 
-
     for (const row of rows) {
 
         const maMon =
             row
-                .querySelector(
-                    ".mamon-input"
-                )
+                .querySelector(".mamon-input")
                 .value
                 .trim();
-
 
         const tenMon =
             row
-                .querySelector(
-                    ".tenmon-input"
-                )
+                .querySelector(".tenmon-input")
                 .value
                 .trim();
 
-
         const diemRaw =
             row
-                .querySelector(
-                    ".diem-input"
-                )
+                .querySelector(".diem-input")
                 .value;
-
 
         if (
             !maMon &&
             !tenMon &&
             diemRaw === ""
         ) {
-
             continue;
         }
-
 
         if (!maMon || !tenMon) {
 
@@ -214,10 +229,8 @@ function getMonHocList() {
             );
         }
 
-
         const diem =
             parseFloat(diemRaw);
-
 
         if (
             isNaN(diem) ||
@@ -230,7 +243,6 @@ function getMonHocList() {
             );
         }
 
-
         list.push({
             maMon,
             tenMon,
@@ -238,129 +250,7 @@ function getMonHocList() {
         });
     }
 
-
     return list;
-}
-
-
-// =====================================================
-// ESCAPE HTML
-// =====================================================
-
-function escapeHtml(str) {
-
-    return String(str)
-        .replace(
-            /[&<>"']/g,
-            character => ({
-                "&": "&amp;",
-                "<": "&lt;",
-                ">": "&gt;",
-                '"': "&quot;",
-                "'": "&#39;"
-            }[character])
-        );
-}
-
-
-// =====================================================
-// FORM
-// =====================================================
-
-function clearForm() {
-
-    document.getElementById(
-        "masv"
-    ).value = "";
-
-    document.getElementById(
-        "masv"
-    ).disabled = false;
-
-
-    document.getElementById(
-        "hoten"
-    ).value = "";
-
-
-    document.getElementById(
-        "tuoi"
-    ).value = 18;
-
-
-    document.getElementById(
-        "phai"
-    ).value = "Nam";
-
-
-    document.getElementById(
-        "malop"
-    ).value = "";
-
-
-    document.getElementById(
-        "ngoaingu-list"
-    ).innerHTML = "";
-
-
-    document.getElementById(
-        "monhoc-list"
-    ).innerHTML = "";
-
-
-    currentEditingId = null;
-}
-
-
-function validateBasicInput() {
-
-    const maSV =
-        document
-            .getElementById("masv")
-            .value
-            .trim();
-
-
-    const hoTen =
-        document
-            .getElementById("hoten")
-            .value
-            .trim();
-
-
-    const tuoi =
-        parseInt(
-            document
-                .getElementById("tuoi")
-                .value,
-            10
-        );
-
-
-    if (!maSV || !hoTen) {
-
-        throw new Error(
-            "Vui lòng nhập đầy đủ Mã SV và Họ tên."
-        );
-    }
-
-
-    if (
-        isNaN(tuoi) ||
-        tuoi <= 0
-    ) {
-
-        throw new Error(
-            "Tuổi phải là số nguyên dương."
-        );
-    }
-
-
-    return {
-        maSV,
-        hoTen,
-        tuoi
-    };
 }
 
 
@@ -378,10 +268,8 @@ async function createSinhVien() {
             tuoi
         } = validateBasicInput();
 
-
         const monHoc =
             getMonHocList();
-
 
         const sv = {
 
@@ -402,13 +290,8 @@ async function createSinhVien() {
                     .value
                     .trim(),
 
-            ngoaiNgu:
-                getNgoaiNguList(),
-
             monHoc
-
         };
-
 
         const res =
             await fetch(API, {
@@ -425,10 +308,8 @@ async function createSinhVien() {
 
             });
 
-
         const text =
             await res.text();
-
 
         if (!res.ok) {
 
@@ -438,12 +319,10 @@ async function createSinhVien() {
             );
         }
 
-
         showToast(
             "Thêm sinh viên thành công!",
             "success"
         );
-
 
         clearForm();
 
@@ -477,12 +356,36 @@ async function updateSinhVien() {
             return;
         }
 
+        const hoTen =
+            document
+                .getElementById("hoten")
+                .value
+                .trim();
 
-        const {
-            hoTen,
-            tuoi
-        } = validateBasicInput();
+        const tuoi =
+            parseInt(
+                document
+                    .getElementById("tuoi")
+                    .value,
+                10
+            );
 
+        if (!hoTen) {
+
+            throw new Error(
+                "Vui lòng nhập đầy đủ Họ tên."
+            );
+        }
+
+        if (
+            isNaN(tuoi) ||
+            tuoi <= 0
+        ) {
+
+            throw new Error(
+                "Tuổi phải là số nguyên dương."
+            );
+        }
 
         const dto = {
 
@@ -501,20 +404,33 @@ async function updateSinhVien() {
                     .value
                     .trim(),
 
-            ngoaiNgu:
-                getNgoaiNguList(),
-
             monHoc:
                 getMonHocList()
-
         };
 
+        console.log(
+            "===== UPDATE STUDENT ====="
+        );
+
+        console.log(
+            "currentEditingId:",
+            currentEditingId
+        );
+
+        console.log(
+            "URL:",
+            `${API}/${currentEditingId}`
+        );
+
+        console.log(
+            "DTO:",
+            dto
+        );
 
         const res =
             await fetch(
-                `${API}/${currentEditingId}`,
+                `${API}/${encodeURIComponent(currentEditingId)}`,
                 {
-
                     method: "PUT",
 
                     headers: {
@@ -524,14 +440,21 @@ async function updateSinhVien() {
 
                     body:
                         JSON.stringify(dto)
-
                 }
             );
-
 
         const text =
             await res.text();
 
+        console.log(
+            "HTTP Status:",
+            res.status
+        );
+
+        console.log(
+            "Response:",
+            text
+        );
 
         if (!res.ok) {
 
@@ -541,18 +464,21 @@ async function updateSinhVien() {
             );
         }
 
-
         showToast(
             "Cập nhật thành công!",
             "success"
         );
-
 
         clearForm();
 
         await loadAll();
 
     } catch (err) {
+
+        console.error(
+            "UPDATE ERROR:",
+            err
+        );
 
         showToast(
             err.message,
@@ -579,21 +505,18 @@ async function deleteSinhVien(
         return;
     }
 
-
     try {
 
         const res =
             await fetch(
-                `${API}/${maSV}`,
+                `${API}/${encodeURIComponent(maSV)}`,
                 {
                     method: "DELETE"
                 }
             );
 
-
         const text =
             await res.text();
-
 
         if (!res.ok) {
 
@@ -603,12 +526,10 @@ async function deleteSinhVien(
             );
         }
 
-
         showToast(
             "Xóa thành công!",
             "success"
         );
-
 
         await loadAll();
 
@@ -633,7 +554,6 @@ async function loadAll() {
         const res =
             await fetch(API);
 
-
         if (!res.ok) {
 
             throw new Error(
@@ -641,10 +561,8 @@ async function loadAll() {
             );
         }
 
-
         const list =
             await res.json();
-
 
         renderTable(list);
 
@@ -659,7 +577,7 @@ async function loadAll() {
 
 
 // =====================================================
-// FILTER
+// FILTER BY CLASS
 // =====================================================
 
 async function filterByLop() {
@@ -670,7 +588,6 @@ async function filterByLop() {
             .value
             .trim();
 
-
     if (!maLop) {
 
         await loadAll();
@@ -678,14 +595,12 @@ async function filterByLop() {
         return;
     }
 
-
     try {
 
         const res =
             await fetch(
-                `${API}/lop/${maLop}`
+                `${API}/lop/${encodeURIComponent(maLop)}`
             );
-
 
         if (!res.ok) {
 
@@ -694,10 +609,8 @@ async function filterByLop() {
             );
         }
 
-
         const list =
             await res.json();
-
 
         renderTable(list);
 
@@ -723,15 +636,12 @@ function renderTable(list) {
             "tbody"
         );
 
-
     const emptyMsg =
         document.getElementById(
             "emptyMsg"
         );
 
-
     tbody.innerHTML = "";
-
 
     if (
         !list ||
@@ -744,29 +654,22 @@ function renderTable(list) {
         return;
     }
 
-
     emptyMsg.style.display =
         "none";
-
 
     for (const sv of list) {
 
         const tr =
             document.createElement("tr");
 
-
         tr.innerHTML = `
 
             <td>
-                ${escapeHtml(
-                    sv.maSV
-                )}
+                ${escapeHtml(sv.maSV)}
             </td>
 
             <td>
-                ${escapeHtml(
-                    sv.hoTen
-                )}
+                ${escapeHtml(sv.hoTen)}
             </td>
 
             <td>
@@ -774,26 +677,11 @@ function renderTable(list) {
             </td>
 
             <td>
-                ${escapeHtml(
-                    sv.phai
-                )}
+                ${escapeHtml(sv.phai)}
             </td>
 
             <td>
-                ${escapeHtml(
-                    sv.maLop
-                )}
-            </td>
-
-            <td>
-                ${
-                    (sv.ngoaiNgu || [])
-                        .map(
-                            escapeHtml
-                        )
-                        .join(", ")
-                    || "-"
-                }
+                ${escapeHtml(sv.maLop)}
             </td>
 
             <td>
@@ -801,8 +689,7 @@ function renderTable(list) {
                 <span class="badge">
 
                     ${
-                        (sv.monHoc || [])
-                            .length
+                        (sv.monHoc || []).length
                     }
                     môn
 
@@ -817,24 +704,18 @@ function renderTable(list) {
                     onclick="
                         event.stopPropagation();
                         deleteSinhVien(
-                            '${escapeHtml(
-                                sv.maSV
-                            )}'
+                            '${escapeHtml(sv.maSV)}'
                         )
-                    ">
-
+                    "
+                >
                     Xóa
-
                 </button>
 
             </td>
-
         `;
-
 
         tr.onclick =
             () => fillFormFromRow(sv);
-
 
         tbody.appendChild(tr);
     }
@@ -847,59 +728,51 @@ function renderTable(list) {
 
 function fillFormFromRow(sv) {
 
-    document.getElementById(
-        "masv"
-    ).value = sv.maSV;
-
+    currentEditingId =
+        sv.maSV;
 
     document.getElementById(
         "masv"
-    ).disabled = true;
+    ).value =
+        sv.maSV;
 
+    document.getElementById(
+        "masv"
+    ).disabled =
+        true;
 
     document.getElementById(
         "hoten"
-    ).value = sv.hoTen;
-
+    ).value =
+        sv.hoTen;
 
     document.getElementById(
         "tuoi"
-    ).value = sv.tuoi;
-
+    ).value =
+        sv.tuoi;
 
     document.getElementById(
         "phai"
-    ).value = sv.phai;
-
+    ).value =
+        sv.phai;
 
     document.getElementById(
         "malop"
-    ).value = sv.maLop;
-
-
-    // Ngoại ngữ
-
-    document.getElementById(
-        "ngoaingu-list"
-    ).innerHTML = "";
-
-
-    (sv.ngoaiNgu || [])
-        .forEach(
-            nn =>
-                addNgoaiNguRow(nn)
-        );
-
+    ).value =
+        sv.maLop;
 
     // Môn học
+    const monHocWrap =
+        document.getElementById(
+            "monhoc-list"
+        );
 
-    document.getElementById(
-        "monhoc-list"
-    ).innerHTML = "";
+    if (monHocWrap) {
 
+        monHocWrap.innerHTML =
+            "";
 
-    (sv.monHoc || [])
-        .forEach(
+        (sv.monHoc || []).forEach(
             mon =>
                 addMonHocRow(
                     mon.maMon,
@@ -907,11 +780,7 @@ function fillFormFromRow(sv) {
                     mon.diem
                 )
         );
-
-
-    currentEditingId =
-        sv.maSV;
-
+    }
 
     showToast(
         `Đã chọn sinh viên ${sv.maSV} — bấm 'Cập nhật' để lưu thay đổi.`,

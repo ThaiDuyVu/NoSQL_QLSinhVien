@@ -13,7 +13,7 @@
 
     <link
         rel="stylesheet"
-        href="advance.css">
+        href="advance.css?v=3">
 
 </head>
 
@@ -301,7 +301,7 @@
                         </label>
 
                         <span class="helper-text">
-                            Có thể chọn nhiều
+                            Chọn từng ngôn ngữ
                         </span>
 
                     </div>
@@ -312,10 +312,34 @@
                         ngoại ngữ hợp lệ vào đây.
                     -->
 
-                    <div
-                        id="language-checklist"
-                        class="checklist">
-                    </div>
+                    <select
+                        id="language-select">
+
+                        <option value="">
+                            -- Chọn ngôn ngữ --
+                        </option>
+
+                    </select>
+
+                    <form
+                        id="custom-language-form"
+                        class="custom-language-form">
+
+                        <input
+                            type="text"
+                            id="custom-language-input"
+                            maxlength="100"
+                            placeholder="Nhập ngôn ngữ khác">
+
+                        <button
+                            type="submit"
+                            class="button secondary">
+
+                            + Thêm vào danh sách
+
+                        </button>
+
+                    </form>
 
                 </div>
 
@@ -391,7 +415,7 @@
                         </p>
 
                         <h2>
-                            Thêm môn học mới
+                            Thêm môn học
                         </h2>
 
                     </div>
@@ -431,69 +455,162 @@
                      NHẬP MÔN HỌC
                 ============================================== -->
 
-                <div
-                    id="course-input-area"
-                    class="course-input-area">
+                <!-- =============================================
+     THÊM MÔN HỌC
+============================================== -->
 
-                    <div class="form-row">
+<div
+    id="course-input-area"
+    class="course-input-area">
 
-                        <div class="form-group">
+<!-- =============================================
+     LỰA CHỌN CÁCH THÊM
+============================================== -->
 
-                            <label for="course-mamon">
-                                Mã môn
-                            </label>
+<div class="form-group">
 
-                            <input
-                                type="text"
-                                id="course-mamon"
-                                placeholder="VD: CS101">
+    <label>
+        Hình thức thêm môn học
+    </label>
 
-                        </div>
+    <div class="form-row">
 
+        <label class="radio-option">
 
-                        <div class="form-group">
+            <input
+                type="radio"
+                name="course-mode"
+                value="new"
+                checked
+            >
 
-                            <label for="course-tenmon">
-                                Tên môn
-                            </label>
+            Nhập môn mới
 
-                            <input
-                                type="text"
-                                id="course-tenmon"
-                                placeholder="VD: MongoDB">
-
-                        </div>
-
-                    </div>
+        </label>
 
 
-                    <div class="form-group">
+        <label class="radio-option">
 
-                        <label for="course-diem">
-                            Điểm số
-                        </label>
+            <input
+                type="radio"
+                name="course-mode"
+                value="existing"
+            >
 
-                        <input
-                            type="number"
-                            id="course-diem"
-                            min="0"
-                            max="10"
-                            step="0.1"
-                            placeholder="8.5">
+            Chọn môn có sẵn
 
-                    </div>
+        </label>
+
+    </div>
+
+</div>
 
 
-                    <button
-                        type="button"
-                        id="add-course-item-button"
-                        class="button secondary">
+<!-- =============================================
+     NHẬP MÔN MỚI
+============================================== -->
 
-                        + Thêm môn vào danh sách
+<div
+    id="new-course-area">
 
-                    </button>
+    <div class="form-row">
 
-                </div>
+        <div class="form-group">
+
+            <label for="course-mamon">
+                Mã môn
+            </label>
+
+            <input
+                type="text"
+                id="course-mamon"
+                placeholder="VD: CS101">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="course-tenmon">
+                Tên môn
+            </label>
+
+            <input
+                type="text"
+                id="course-tenmon"
+                placeholder="VD: Cơ sở dữ liệu">
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =============================================
+     CHỌN MÔN CÓ SẴN
+============================================== -->
+
+<div
+    id="existing-course-area"
+    style="display: none;">
+
+    <div class="form-group">
+
+        <label for="existing-course-select">
+            Môn học có sẵn
+        </label>
+
+        <select
+            id="existing-course-select">
+
+            <option value="">
+                -- Đang tải danh sách môn học... --
+            </option>
+
+        </select>
+
+    </div>
+
+</div>
+
+
+<!-- =============================================
+     ĐIỂM
+============================================== -->
+
+<div class="form-group">
+
+    <label for="course-diem">
+        Điểm số
+    </label>
+
+    <input
+        type="number"
+        id="course-diem"
+        min="0"
+        max="10"
+        step="0.1"
+        placeholder="8.5">
+
+</div>
+
+
+<!-- =============================================
+     ADD TO PENDING LIST
+============================================== -->
+
+<button
+    type="button"
+    id="add-course-item-button"
+    class="button secondary">
+
+    + Thêm môn vào danh sách
+
+</button>
+
+</div>
+
 
 
                 <!-- =============================================
@@ -590,32 +707,38 @@
                     class="operation-form">
 
 
-                    <!-- Mã sinh viên -->
-
-                    <label for="score-masv">
+                    <label for="score-student-select">
 
                         Mã sinh viên
 
-                        <input
-                            type="text"
-                            id="score-masv"
-                            placeholder="VD: sv001"
+                        <select
+                            id="score-student-select"
                             required>
+
+                            <option value="">
+                                -- Chọn sinh viên --
+                            </option>
+
+                        </select>
 
                     </label>
 
 
                     <!-- Mã môn -->
 
-                    <label for="score-mamon">
+                    <label for="score-course-select">
 
                         Mã môn cần sửa
 
-                        <input
-                            type="text"
-                            id="score-mamon"
-                            placeholder="VD: CS101"
+                        <select
+                            id="score-course-select"
                             required>
+
+                            <option value="">
+                                -- Chọn sinh viên trước --
+                            </option>
+
+                        </select>
 
                     </label>
 
@@ -773,10 +896,10 @@
     <script src="navbar.js"></script>
 
     <!-- Danh sách ngoại ngữ hợp lệ -->
-    <script src="languages.js"></script>
+    <script src="languages.js?v=3"></script>
 
     <!-- Logic trang Advance -->
-    <script src="advance.js"></script>
+    <script src="advance.js?v=7"></script>
 
 </body>
 

@@ -4,21 +4,6 @@ use qlsinhvien_db;
 
 db.sinhvien.drop();
 
-db.sinhvien.createIndex(
-    { "masv": 1 },
-    {
-        unique: true,
-        name: "Unique_MaSV"
-    }
-);
-
-db.sinhvien.createIndex(
-    { "malop": 1, "hoten": 1 },
-    {
-        name: "Compound_MaLop_HoTen"
-    }
-);
-
 
 
 db.sinhvien.insertMany([
