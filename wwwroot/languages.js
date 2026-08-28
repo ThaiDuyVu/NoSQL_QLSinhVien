@@ -17,6 +17,22 @@ const VALID_LANGUAGES = [
 ];
 
 
+function createLanguageOption(
+    language,
+    disabled = false
+) {
+
+    const option =
+        document.createElement("option");
+
+    option.value = language;
+    option.textContent = language;
+    option.disabled = disabled;
+
+    return option;
+}
+
+
 /* =========================================
    RENDER LANGUAGE CHECKLIST
 ========================================= */
@@ -33,13 +49,13 @@ function refreshLanguageChecklist(
     currentLanguages = []
 ) {
 
-    const container =
+    const select =
         document.getElementById(
-            "language-checklist"
+            "language-select"
         );
 
 
-    if (!container) {
+    if (!select) {
         return;
     }
 
@@ -53,73 +69,43 @@ function refreshLanguageChecklist(
             ? currentLanguages
             : [];
 
+    const languages = [
+        ...VALID_LANGUAGES,
+        ...existingLanguages.filter(
+            language =>
+                !VALID_LANGUAGES.some(
+                    validLanguage =>
+                        validLanguage.toLowerCase() ===
+                        String(language).toLowerCase()
+                )
+        )
+    ];
 
-    container.innerHTML = "";
+
+    select.innerHTML = `
+        <option value="">
+            -- Chọn ngôn ngữ --
+        </option>
+    `;
 
 
     /*
      * Render toàn bộ ngoại ngữ hợp lệ.
      */
-    VALID_LANGUAGES.forEach(
+    languages.forEach(
         language => {
-
-            const item =
-                document.createElement(
-                    "label"
+            const currentLanguage =
+                existingLanguages.find(
+                    current =>
+                        String(current).toLowerCase() ===
+                        String(language).toLowerCase()
                 );
 
-
-            item.className =
-                "checklist-item";
-
-
-            const checkbox =
-                document.createElement(
-                    "input"
-                );
-
-
-            checkbox.type =
-                "checkbox";
-
-            checkbox.name =
-                "language";
-
-            checkbox.value =
-                language;
-
-
-            /*
-             * Nếu sinh viên đã có ngoại ngữ này
-             * thì checkbox sẽ được đánh dấu.
-             */
-            checkbox.checked =
-                existingLanguages.includes(
-                    language
-                );
-
-
-            const text =
-                document.createElement(
-                    "span"
-                );
-
-
-            text.textContent =
-                language;
-
-
-            item.appendChild(
-                checkbox
-            );
-
-            item.appendChild(
-                text
-            );
-
-
-            container.appendChild(
-                item
+            select.appendChild(
+                createLanguageOption(
+                    language,
+                    currentLanguage !== undefined
+                )
             );
         }
     );

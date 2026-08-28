@@ -12,6 +12,15 @@ const BASE_BASIC_API = "/api/sinhvien";
  */
 let pendingCourses = [];
 
+/*
+ * Danh sách môn học đang có sẵn trong CSDL.
+ */
+let availableCourses = [];
+
+/*
+ * Danh sách sinh viên dùng cho các combobox.
+ */
+let availableStudents = [];
 
 /*
  * Danh sách ngoại ngữ đang được chọn.
@@ -187,9 +196,11 @@ async function lookupStudent() {
 
 
         document
-            .getElementById("score-masv")
+            .getElementById("score-student-select")
             .value =
             sv.maSV ?? "";
+
+        await loadScoreCourses(sv.maSV);
 
 
         /* ================================
@@ -516,18 +527,38 @@ function renderCurrentStudentCourses() {
 
 function getCheckedLanguages() {
 
-    const checkboxes =
-        document.querySelectorAll(
-            'input[name="language"]:checked'
+    return selectedLanguages;
+}
+
+
+function addSelectedLanguage(language) {
+
+    if (!language) {
+        return;
+    }
+
+    const exists =
+        selectedLanguages.some(
+            selectedLanguage =>
+                selectedLanguage.toLowerCase() ===
+                language.toLowerCase()
         );
 
+    if (exists) {
+        showToast(
+            `Ngôn ngữ '${language}' đã có trong danh sách.`,
+            "error"
+        );
+        return;
+    }
 
-    return Array.from(
-        checkboxes
-    ).map(
-        checkbox =>
-            checkbox.value
-    );
+    selectedLanguages.push(language);
+
+    document
+        .getElementById("language-select")
+        .value = "";
+
+    updateSelectedLanguages();
 }
 
 
@@ -619,20 +650,81 @@ function updateSelectedLanguages() {
 }
 
 
+function handleAddCustomLanguage(event) {
+
+    event.preventDefault();
+
+    const input =
+        document.getElementById(
+            "custom-language-input"
+        );
+
+    const language =
+        input.value.trim();
+
+    if (!language) {
+        showToast(
+            "Vui lòng nhập tên ngôn ngữ.",
+            "error"
+        );
+        return;
+    }
+
+    if (/[^\x20-\x7E\u00A0-\uFFFF]/.test(language)) {
+        showToast(
+            "Tên ngôn ngữ chứa ký tự không hợp lệ.",
+            "error"
+        );
+        return;
+    }
+
+    const exists =
+        Array.from(
+            document.querySelectorAll(
+                "#language-select option"
+            )
+        ).some(
+            option =>
+                option.value.toLowerCase() ===
+                language.toLowerCase()
+        );
+
+    if (exists) {
+        showToast(
+            `Ngôn ngữ '${language}' đã có trong danh sách.`,
+            "error"
+        );
+        return;
+    }
+
+    document
+        .getElementById("language-select")
+        .appendChild(
+            createLanguageOption(language)
+        );
+
+    input.value = "";
+    addSelectedLanguage(language);
+}
+
+
 function removeSelectedLanguage(
     language
 ) {
 
-    const checkbox =
+    const option =
         document.querySelector(
-            `input[name="language"][value="${CSS.escape(language)}"]`
+            `#language-select option[value="${CSS.escape(language)}"]`
         );
 
 
-    if (checkbox) {
+    if (option) {
 
-        checkbox.checked =
-            false;
+        selectedLanguages =
+            selectedLanguages.filter(
+                selectedLanguage =>
+                    selectedLanguage !== language
+            );
 
     }
 
@@ -666,7 +758,7 @@ async function handleAddLanguage() {
 
 
     const languages =
-        getCheckedLanguages();
+        [...getCheckedLanguages()];
 
 
     if (languages.length === 0) {
@@ -755,17 +847,8 @@ async function handleAddLanguage() {
 
 
     document
-        .querySelectorAll(
-            'input[name="language"]'
-        )
-        .forEach(
-            checkbox => {
-
-                checkbox.checked =
-                    false;
-
-            }
-        );
+        .getElementById("language-select")
+        .value = "";
 
 
     updateSelectedLanguages();
@@ -780,21 +863,12 @@ async function handleAddLanguage() {
 /* =========================================
    ADD COURSE TO PENDING LIST
 ========================================= */
-
 function addCourseToPendingList() {
 
-    const maMon =
-        document
-            .getElementById("course-mamon")
-            .value
-            .trim();
-
-
-    const tenMon =
-        document
-            .getElementById("course-tenmon")
-            .value
-            .trim();
+    const mode =
+        document.querySelector(
+            'input[name="course-mode"]:checked'
+        )?.value;
 
 
     const diem =
@@ -803,17 +877,6 @@ function addCourseToPendingList() {
                 .getElementById("course-diem")
                 .value
         );
-
-
-    if (!maMon || !tenMon) {
-
-        showToast(
-            "Vui lòng nhập mã môn và tên môn.",
-            "error"
-        );
-
-        return;
-    }
 
 
     if (
@@ -830,6 +893,97 @@ function addCourseToPendingList() {
         return;
     }
 
+
+    let maMon = "";
+    let tenMon = "";
+
+
+    // =================================================
+    // TRƯỜNG HỢP 1: NHẬP MÔN MỚI
+    // =================================================
+
+    if (mode === "new") {
+
+        maMon =
+            document
+                .getElementById("course-mamon")
+                .value
+                .trim();
+
+        tenMon =
+            document
+                .getElementById("course-tenmon")
+                .value
+                .trim();
+
+
+        if (!maMon || !tenMon) {
+
+            showToast(
+                "Vui lòng nhập mã môn và tên môn.",
+                "error"
+            );
+
+            return;
+        }
+    }
+
+
+    // =================================================
+    // TRƯỜNG HỢP 2: CHỌN MÔN CÓ SẴN
+    // =================================================
+
+    else if (mode === "existing") {
+
+        const selectedMaMon =
+            document
+                .getElementById(
+                    "existing-course-select"
+                )
+                .value;
+
+
+        if (!selectedMaMon) {
+
+            showToast(
+                "Vui lòng chọn một môn học.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        const selectedCourse =
+            availableCourses.find(
+                course =>
+                    course.maMon ===
+                    selectedMaMon
+            );
+
+
+        if (!selectedCourse) {
+
+            showToast(
+                "Không tìm thấy thông tin môn học đã chọn.",
+                "error"
+            );
+
+            return;
+        }
+
+
+        maMon =
+            selectedCourse.maMon;
+
+        tenMon =
+            selectedCourse.tenMon;
+    }
+
+
+    // =================================================
+    // KIỂM TRA TRÙNG TRONG DANH SÁCH CHỜ
+    // =================================================
 
     const exists =
         pendingCourses.some(
@@ -851,6 +1005,10 @@ function addCourseToPendingList() {
     }
 
 
+    // =================================================
+    // THÊM VÀO PENDING
+    // =================================================
+
     pendingCourses.push({
 
         maMon,
@@ -865,19 +1023,33 @@ function addCourseToPendingList() {
     renderPendingCourses();
 
 
-    document
-        .getElementById("course-mamon")
-        .value = "";
-
-
-    document
-        .getElementById("course-tenmon")
-        .value = "";
-
+    // =================================================
+    // RESET INPUT
+    // =================================================
 
     document
         .getElementById("course-diem")
         .value = "";
+
+
+    if (mode === "new") {
+
+        document
+            .getElementById("course-mamon")
+            .value = "";
+
+        document
+            .getElementById("course-tenmon")
+            .value = "";
+
+    } else {
+
+        document
+            .getElementById(
+                "existing-course-select"
+            )
+            .value = "";
+    }
 
 
     showToast(
@@ -885,7 +1057,6 @@ function addCourseToPendingList() {
         "success"
     );
 }
-
 
 /* =========================================
    RENDER PENDING COURSES
@@ -1147,14 +1318,14 @@ async function handleUpdateScore(event) {
 
     const masv =
         document
-            .getElementById("score-masv")
+            .getElementById("score-student-select")
             .value
             .trim();
 
 
     const mamon =
         document
-            .getElementById("score-mamon")
+            .getElementById("score-course-select")
             .value
             .trim();
 
@@ -1552,17 +1723,8 @@ function resetPendingOperations() {
 
 
     document
-        .querySelectorAll(
-            'input[name="language"]'
-        )
-        .forEach(
-            checkbox => {
-
-                checkbox.checked =
-                    false;
-
-            }
-        );
+        .getElementById("language-select")
+        .value = "";
 
 
     updateSelectedLanguages();
@@ -1641,22 +1803,21 @@ document
 ========================================= */
 
 document
-    .getElementById("language-checklist")
+    .getElementById("language-select")
     .addEventListener(
         "change",
-        event => {
+        event =>
+            addSelectedLanguage(
+                event.target.value
+            )
+    );
 
-            if (
-                event.target.matches(
-                    'input[name="language"]'
-                )
-            ) {
 
-                updateSelectedLanguages();
-
-            }
-
-        }
+document
+    .getElementById("custom-language-form")
+    .addEventListener(
+        "submit",
+        handleAddCustomLanguage
     );
 
 
@@ -1719,7 +1880,20 @@ document
         "click",
         addCourseToPendingList
     );
+document
+    .querySelectorAll(
+        'input[name="course-mode"]'
+    )
+    .forEach(
+        radio => {
 
+            radio.addEventListener(
+                "change",
+                handleCourseModeChange
+            );
+
+        }
+    );
 
 document
     .getElementById("selected-courses")
@@ -1801,10 +1975,360 @@ document
         }
     );
 
+/* =========================================
+   LOAD AVAILABLE STUDENTS
+========================================= */
 
+async function loadAvailableStudents() {
+
+    const select =
+        document.getElementById(
+            "score-student-select"
+        );
+
+    if (!select) {
+        return;
+    }
+
+    try {
+        const response =
+            await fetch(BASE_BASIC_API);
+
+        const text =
+            await response.text();
+
+        if (!response.ok) {
+            throw new Error(
+                text ||
+                "Không thể tải danh sách sinh viên."
+            );
+        }
+
+        availableStudents =
+            text
+                ? JSON.parse(text)
+                : [];
+
+        if (!Array.isArray(availableStudents)) {
+            throw new Error(
+                "Dữ liệu sinh viên trả về không phải là mảng."
+            );
+        }
+
+        renderScoreStudents(availableStudents);
+
+    } catch (error) {
+        availableStudents = [];
+
+        select.innerHTML = `
+            <option value="">
+                -- Không thể tải danh sách sinh viên --
+            </option>
+        `;
+
+        showToast(
+            error.message ||
+            "Không thể tải danh sách sinh viên.",
+            "error"
+        );
+    }
+}
+
+
+function renderScoreStudents(students) {
+
+    const select =
+        document.getElementById(
+            "score-student-select"
+        );
+
+    const selectedMaSV =
+        select.value;
+
+    select.innerHTML = `
+        <option value="">
+            -- Chọn sinh viên --
+        </option>
+    `;
+
+    students
+        .filter(student => student.maSV)
+        .forEach(student => {
+            const option =
+                document.createElement("option");
+
+            option.value = student.maSV;
+            option.textContent =
+                `${student.maSV} - ${student.hoTen || "Chưa có tên"}`;
+
+            select.appendChild(option);
+        });
+
+    if (
+        students.some(student =>
+            student.maSV === selectedMaSV
+        )
+    ) {
+        select.value = selectedMaSV;
+    }
+}
+
+
+async function loadScoreCourses(masv) {
+
+    const select =
+        document.getElementById(
+            "score-course-select"
+        );
+
+    select.innerHTML = `
+        <option value="">
+            -- Đang tải danh sách môn học... --
+        </option>
+    `;
+
+    if (!masv) {
+        select.innerHTML = `
+            <option value="">
+                -- Chọn sinh viên trước --
+            </option>
+        `;
+        return;
+    }
+
+    try {
+        const courses =
+            await getStudentCourses(masv);
+
+        select.innerHTML = `
+            <option value="">
+                -- Chọn môn học --
+            </option>
+        `;
+
+        const uniqueCourses = [
+            ...new Map(
+                courses.map(course => [
+                    course.maMon.toLowerCase(),
+                    course
+                ])
+            ).values()
+        ];
+
+        uniqueCourses.forEach(course => {
+            const option =
+                document.createElement("option");
+
+            option.value = course.maMon;
+            option.textContent =
+                `${course.maMon} - ${course.tenMon}`;
+
+            select.appendChild(option);
+        });
+
+        if (courses.length === 0) {
+            select.innerHTML = `
+                <option value="">
+                    -- Sinh viên chưa có môn học --
+                </option>
+            `;
+        }
+    } catch (error) {
+        select.innerHTML = `
+            <option value="">
+                -- Không thể tải danh sách môn học --
+            </option>
+        `;
+    }
+}
+
+
+/* =========================================
+   LOAD AVAILABLE COURSES
+========================================= */
+
+async function loadAvailableCourses() {
+
+    const select =
+        document.getElementById(
+            "existing-course-select"
+        );
+
+
+    if (!select) {
+
+        console.error(
+            "Không tìm thấy #existing-course-select."
+        );
+
+        return;
+    }
+
+
+    try {
+
+        select.innerHTML = `
+            <option value="">
+                -- Đang tải danh sách môn học... --
+            </option>
+        `;
+
+
+        const response =
+            await fetch(
+                `${BASE_BASIC_API}/mon-hoc`
+            );
+
+
+        const text =
+            await response.text();
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                text ||
+                "Không thể tải danh sách môn học."
+            );
+        }
+
+
+        availableCourses =
+            text
+                ? JSON.parse(text)
+                : [];
+
+
+        if (!Array.isArray(availableCourses)) {
+
+            throw new Error(
+                "Dữ liệu môn học trả về không phải là mảng."
+            );
+        }
+
+
+        select.innerHTML = `
+            <option value="">
+                -- Chọn môn học --
+            </option>
+        `;
+
+
+        availableCourses.forEach(
+            course => {
+
+                const option =
+                    document.createElement(
+                        "option"
+                    );
+
+
+                option.value =
+                    course.maMon;
+
+
+                option.textContent =
+                    `${course.maMon} - ${course.tenMon}`;
+
+
+                select.appendChild(
+                    option
+                );
+            }
+        );
+
+
+        if (
+            availableCourses.length === 0
+        ) {
+
+            select.innerHTML = `
+                <option value="">
+                    -- Chưa có môn học trong CSDL --
+                </option>
+            `;
+
+        }
+
+
+    } catch (error) {
+
+        console.error(
+            "LOAD AVAILABLE COURSES ERROR:",
+            error
+        );
+
+
+        availableCourses = [];
+
+
+        select.innerHTML = `
+            <option value="">
+                -- Không thể tải danh sách môn học --
+            </option>
+        `;
+
+
+        showToast(
+            error.message ||
+            "Không thể tải danh sách môn học.",
+            "error"
+        );
+    }
+}
+function handleCourseModeChange() {
+
+    const mode =
+        document.querySelector(
+            'input[name="course-mode"]:checked'
+        )?.value;
+
+    const newArea =
+        document.getElementById(
+            "new-course-area"
+        );
+
+    const existingArea =
+        document.getElementById(
+            "existing-course-area"
+        );
+
+    if (!newArea || !existingArea) {
+        return;
+    }
+
+    if (mode === "existing") {
+
+        newArea.style.display =
+            "none";
+
+        existingArea.style.display =
+            "block";
+
+        loadAvailableCourses();
+
+    } else {
+
+        newArea.style.display =
+            "block";
+
+        existingArea.style.display =
+            "none";
+    }
+}
 /* =========================================
    UPDATE SCORE
 ========================================= */
+
+document
+    .getElementById("score-student-select")
+    .addEventListener(
+        "change",
+        event =>
+            loadScoreCourses(
+                event.target.value
+            )
+    );
 
 document
     .getElementById(
@@ -1839,3 +2363,7 @@ updateSelectedLanguages();
 renderPendingCourses();
 
 renderCurrentStudentCourses();
+
+handleCourseModeChange();
+
+loadAvailableStudents();

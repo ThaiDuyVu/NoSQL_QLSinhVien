@@ -427,7 +427,8 @@ code {
 ========================================= */
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
 
     padding: 10px 11px;
@@ -452,7 +453,8 @@ textarea {
 }
 
 
-input {
+input,
+select {
     min-height: 42px;
 }
 
@@ -474,7 +476,8 @@ textarea {
 
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     border-color: var(--primary);
 
     box-shadow:
@@ -493,6 +496,80 @@ textarea:focus {
         repeat(2, minmax(0, 1fr));
 
     gap: 10px;
+}
+
+
+.radio-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 44px;
+
+    padding: 10px 12px;
+
+    border: 1px solid var(--line);
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: var(--text);
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        border-color .2s,
+        background-color .2s,
+        box-shadow .2s;
+}
+
+
+.radio-option:hover {
+    border-color: #93c5fd;
+
+    background: #f8fbff;
+}
+
+
+.radio-option input[type="radio"] {
+    width: 18px;
+
+    height: 18px;
+
+    min-height: 18px;
+
+    margin: 0;
+
+    padding: 0;
+
+    flex-shrink: 0;
+
+    accent-color: var(--primary);
+
+    cursor: pointer;
+}
+
+
+.radio-option:has(input[type="radio"]:checked) {
+    border-color: #93c5fd;
+
+    background: var(--primary-light);
+
+    box-shadow:
+        0 0 0 1px rgba(37, 99, 235, .08);
+}
+
+
+.radio-option:has(input[type="radio"]:focus-visible) {
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, .14);
 }
 
 
@@ -629,6 +706,27 @@ textarea:focus {
 
     box-shadow:
         0 0 0 1px rgba(37, 99, 235, .08);
+}
+
+
+.custom-language-form {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+
+.custom-language-form input {
+    min-width: 0;
+    flex: 1;
+}
+
+
+.custom-language-form .button {
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 
@@ -1094,6 +1192,13 @@ textarea:focus {
     }
 
 
+    .custom-language-form {
+        display: grid;
+
+        grid-template-columns: 1fr;
+    }
+
+
     .info-grid {
         grid-template-columns: 1fr;
     }
@@ -1146,6 +1251,8 @@ textarea:focus {
 
         max-width: none;
     }
+}
+
 /* =========================================
    CURRENT STUDENT COURSES
 ========================================= */

@@ -31,6 +31,29 @@ namespace QLSinhVienAPI.Controllers
                     "Tên ngoại ngữ không được để trống."
                 );
 
+            ngoaiNgu = ngoaiNgu.Trim();
+
+            var sinhVien = await _collection
+                .Find(x => x.MaSV == masv)
+                .FirstOrDefaultAsync();
+
+            if (sinhVien == null)
+                return NotFound(
+                    $"Không tìm thấy sinh viên có mã '{masv}'."
+                );
+
+            if (sinhVien.NgoaiNgu.Any(x =>
+                string.Equals(
+                    x.Trim(),
+                    ngoaiNgu,
+                    StringComparison.OrdinalIgnoreCase
+                )))
+            {
+                return Conflict(
+                    $"Ngôn ngữ '{ngoaiNgu}' đã tồn tại trong danh sách của sinh viên."
+                );
+            }
+
             var update =
                 Builders<SinhVien>.Update.AddToSet(
                     x => x.NgoaiNgu,
@@ -41,11 +64,6 @@ namespace QLSinhVienAPI.Controllers
                 await _collection.UpdateOneAsync(
                     x => x.MaSV == masv,
                     update
-                );
-
-            if (result.MatchedCount == 0)
-                return NotFound(
-                    $"Không tìm thấy sinh viên có mã '{masv}'."
                 );
 
             return Ok(
@@ -70,10 +88,34 @@ namespace QLSinhVienAPI.Controllers
                 );
             }
 
+            monHoc.MaMon = monHoc.MaMon.Trim();
+            monHoc.TenMon = monHoc.TenMon.Trim();
+
             if (monHoc.Diem < 0 || monHoc.Diem > 10)
                 return BadRequest(
                     "Điểm số phải nằm trong khoảng từ 0 đến 10."
                 );
+
+            var sinhVien = await _collection
+                .Find(x => x.MaSV == masv)
+                .FirstOrDefaultAsync();
+
+            if (sinhVien == null)
+                return NotFound(
+                    $"Không tìm thấy sinh viên có mã '{masv}'."
+                );
+
+            if (sinhVien.MonHoc.Any(x =>
+                string.Equals(
+                    x.MaMon.Trim(),
+                    monHoc.MaMon,
+                    StringComparison.OrdinalIgnoreCase
+                )))
+            {
+                return Conflict(
+                    $"Mã môn '{monHoc.MaMon}' đã tồn tại trong danh sách môn học của sinh viên."
+                );
+            }
 
             var update =
                 Builders<SinhVien>.Update.Push(
@@ -85,11 +127,6 @@ namespace QLSinhVienAPI.Controllers
                 await _collection.UpdateOneAsync(
                     x => x.MaSV == masv,
                     update
-                );
-
-            if (result.MatchedCount == 0)
-                return NotFound(
-                    $"Không tìm thấy sinh viên có mã '{masv}'."
                 );
 
             return Ok(
