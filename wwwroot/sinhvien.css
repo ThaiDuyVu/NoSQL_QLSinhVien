@@ -31,10 +31,8 @@ body {
 }
 
 .page {
-    width: min(
-        1400px,
-        calc(100% - 32px)
-    );
+    width: min(1400px,
+            calc(100% - 32px));
 
     margin: 0 auto;
 
@@ -67,11 +65,9 @@ p {
 h1 {
     margin-bottom: 8px;
 
-    font-size: clamp(
-        28px,
-        4vw,
-        40px
-    );
+    font-size: clamp(28px,
+            4vw,
+            40px);
 }
 
 h2 {
@@ -117,12 +113,10 @@ h2 {
     background: var(--surface);
 
     box-shadow:
-        0 4px 12px rgba(
-            16,
+        0 4px 12px rgba(16,
             24,
             40,
-            .04
-        );
+            .04);
 }
 
 .form-card {
@@ -187,13 +181,10 @@ select:focus {
     border-color: var(--primary);
 
     box-shadow:
-        0 0 0 3px
-        rgba(
-            37,
+        0 0 0 3px rgba(37,
             99,
             235,
-            .1
-        );
+            .1);
 }
 
 
@@ -450,8 +441,7 @@ tbody tr:last-child td {
     font-size: 14px;
 
     box-shadow:
-        0 8px 24px
-        rgba(0, 0, 0, .15);
+        0 8px 24px rgba(0, 0, 0, .15);
 }
 
 .toast.success {
@@ -499,5 +489,18 @@ tbody tr:last-child td {
 
     .row-inline {
         flex-wrap: wrap;
+    }
+
+    .modal {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content th,
+    .modal-content td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
     }
 }

@@ -110,63 +110,63 @@ namespace QLSinhVienAPI.Controllers
 
 
         [HttpPut("{masv}/mon-hoc/{mamon}")]
-public async Task<IActionResult> UpdateDiemMonHoc(
+        public async Task<IActionResult> UpdateDiemMonHoc(
     string masv,
     string mamon,
     [FromBody] UpdateDiemDto dto)
-{
-    if (dto.Diem < 0 || dto.Diem > 10)
-    {
-        return BadRequest(
-            "Điểm số phải nằm trong khoảng từ 0 đến 10."
-        );
-    }
+        {
+            if (dto.Diem < 0 || dto.Diem > 10)
+            {
+                return BadRequest(
+                    "Điểm số phải nằm trong khoảng từ 0 đến 10."
+                );
+            }
 
-    // Tìm sinh viên theo mã sinh viên
-    // và tìm môn học có MaMon tương ứng
-    var filter = Builders<SinhVien>.Filter.And(
-        Builders<SinhVien>.Filter.Eq(
-            x => x.MaSV,
-            masv
-        ),
+            // Tìm sinh viên theo mã sinh viên
+            // và tìm môn học có MaMon tương ứng
+            var filter = Builders<SinhVien>.Filter.And(
+                Builders<SinhVien>.Filter.Eq(
+                    x => x.MaSV,
+                    masv
+                ),
 
-        Builders<SinhVien>.Filter.ElemMatch(
-            x => x.MonHoc,
-            m => m.MaMon == mamon
-        )
-    );
+                Builders<SinhVien>.Filter.ElemMatch(
+                    x => x.MonHoc,
+                    m => m.MaMon == mamon
+                )
+            );
 
-    // MongoDB positional operator $
-    var update =
-        Builders<SinhVien>.Update.Set(
-            "MonHoc.$.Diem",
-            dto.Diem
-        );
+            // MongoDB positional operator $
+            var update =
+                Builders<SinhVien>.Update.Set(
+                    "MonHoc.$.Diem",
+                    dto.Diem
+                );
 
-    var result =
-        await _collection.UpdateOneAsync(
-            filter,
-            update
-        );
+            var result =
+                await _collection.UpdateOneAsync(
+                    filter,
+                    update
+                );
 
-    if (result.MatchedCount == 0)
-    {
-        return NotFound(
-            $"Không tìm thấy sinh viên '{masv}' có môn học mã '{mamon}'."
-        );
-    }
+            if (result.MatchedCount == 0)
+            {
+                return NotFound(
+                    $"Không tìm thấy sinh viên '{masv}' có môn học mã '{mamon}'."
+                );
+            }
 
-    if (result.ModifiedCount == 0)
-    {
-        return Ok(
-            "Điểm số không thay đổi (giữ nguyên giá trị cũ)."
-        );
-    }
+            if (result.ModifiedCount == 0)
+            {
+                return Ok(
+                    "Điểm số không thay đổi (giữ nguyên giá trị cũ)."
+                );
+            }
 
-    return Ok(
-        $"Đã cập nhật điểm môn '{mamon}' thành công."
-    );
-}
+            return Ok(
+                $"Đã cập nhật điểm môn '{mamon}' thành công."
+            );
+        }
 
         // =====================================================
         // 3. THAY THẾ DOCUMENT
@@ -198,28 +198,28 @@ public async Task<IActionResult> UpdateDiemMonHoc(
             );
         }
         // =====================================================
-// 2. XEM DANH SÁCH MÔN HỌC CỦA SINH VIÊN
-//    Dựa vào mã sinh viên
-// =====================================================
+        // 2. XEM DANH SÁCH MÔN HỌC CỦA SINH VIÊN
+        //    Dựa vào mã sinh viên
+        // =====================================================
 
-[HttpGet("{masv}/mon-hoc")]
-public async Task<IActionResult> GetMonHocByMaSV(string masv)
-{
-    // Tìm sinh viên theo mã sinh viên
-    var sinhVien = await _collection
-        .Find(x => x.MaSV == masv)
-        .FirstOrDefaultAsync();
+        [HttpGet("{masv}/mon-hoc")]
+        public async Task<IActionResult> GetMonHocByMaSV(string masv)
+        {
+            // Tìm sinh viên theo mã sinh viên
+            var sinhVien = await _collection
+                .Find(x => x.MaSV == masv)
+                .FirstOrDefaultAsync();
 
-    // Không tìm thấy sinh viên
-    if (sinhVien == null)
-    {
-        return NotFound(
-            $"Không tìm thấy sinh viên có mã '{masv}'."
-        );
-    }
+            // Không tìm thấy sinh viên
+            if (sinhVien == null)
+            {
+                return NotFound(
+                    $"Không tìm thấy sinh viên có mã '{masv}'."
+                );
+            }
 
-    // Trả về danh sách môn học của sinh viên
-    return Ok(sinhVien.MonHoc);
-}
+            // Trả về danh sách môn học của sinh viên
+            return Ok(sinhVien.MonHoc);
+        }
     }
 }

@@ -66,33 +66,44 @@ namespace QLSinhVienAPI.Controllers
         }
 
         // ---------- UPDATE ----------
-        public class UpdateSinhVienDto
-        {
-            public string HoTen { get; set; } = string.Empty;
-            public int Tuoi { get; set; }
-            public string Phai { get; set; } = string.Empty;
-            public string MaLop { get; set; } = string.Empty;
-        }
+        
+public class UpdateSinhVienDto
+{
+    public string HoTen { get; set; } = string.Empty;
+    public int Tuoi { get; set; }
+    public string Phai { get; set; } = string.Empty;
+    public string MaLop { get; set; } = string.Empty;
+    public List<string> NgoaiNgu { get; set; } = new();
+    public List<MonHoc> MonHoc { get; set; } = new();
+}
 
-        [HttpPut("{masv}")]
-        public async Task<IActionResult> Update(string masv, [FromBody] UpdateSinhVienDto dto)
-        {
-            if (dto.Tuoi <= 0)
-                return BadRequest("Tuổi sinh viên phải là số nguyên dương.");
+[HttpPut("{masv}")]
+public async Task<IActionResult> Update(string masv, [FromBody] UpdateSinhVienDto dto)
+{
+    if (dto.Tuoi <= 0)
+        return BadRequest("Tuổi sinh viên phải là số nguyên dương.");
 
-            var update = Builders<SinhVien>.Update
-                .Set(x => x.HoTen, dto.HoTen)
-                .Set(x => x.Tuoi, dto.Tuoi)
-                .Set(x => x.Phai, dto.Phai)
-                .Set(x => x.MaLop, dto.MaLop);
+    foreach (var mon in dto.MonHoc)
+    {
+        if (mon.Diem < 0 || mon.Diem > 10)
+            return BadRequest($"Điểm môn '{mon.TenMon}' phải trong khoảng 0 - 10.");
+    }
 
-            var result = await _collection.UpdateOneAsync(x => x.MaSV == masv, update);
+    var update = Builders<SinhVien>.Update
+        .Set(x => x.HoTen, dto.HoTen)
+        .Set(x => x.Tuoi, dto.Tuoi)
+        .Set(x => x.Phai, dto.Phai)
+        .Set(x => x.MaLop, dto.MaLop)
+        .Set(x => x.NgoaiNgu, dto.NgoaiNgu)
+        .Set(x => x.MonHoc, dto.MonHoc);
 
-            if (result.MatchedCount == 0)
-                return NotFound($"Không tìm thấy sinh viên có mã '{masv}'.");
+    var result = await _collection.UpdateOneAsync(x => x.MaSV == masv, update);
 
-            return Ok("Cập nhật thành công.");
-        }
+    if (result.MatchedCount == 0)
+        return NotFound($"Không tìm thấy sinh viên có mã '{masv}'.");
+
+    return Ok("Cập nhật thành công.");
+}
 
         // ---------- DELETE ----------
         [HttpDelete("{masv}")]

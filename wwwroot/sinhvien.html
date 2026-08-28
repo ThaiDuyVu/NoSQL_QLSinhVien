@@ -257,7 +257,29 @@
     id="toast"
     class="toast">
 </div>
+<div id="detailModal" class="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+    <div class="modal-content" style="background-color:#fff; padding:25px; width:450px; border-radius:8px; position:relative; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+        <span onclick="closeModal()" style="position:absolute; right:15px; top:10px; font-size:24px; cursor:pointer; font-weight:bold;">&times;</span>
+        <h2 style="margin-top:0; color:#333;">Chi tiết sinh viên</h2>
+        <p><strong>Mã SV:</strong> <span id="modalMaSV"></span></p>
+        <p><strong>Họ tên:</strong> <span id="modalHoTen"></span></p>
+        
+        <h4 style="margin-bottom:5px; color:#555;">Ngoại ngữ:</h4>
+        <ul id="modalNgoaiNgu" style="margin-top:0; padding-left:20px;"></ul>
 
+        <h4 style="margin-bottom:5px; color:#555;">Môn học & Điểm:</h4>
+        <table style="width:100%; border-collapse:collapse; margin-top:5px;">
+            <thead>
+                <tr style="background-color:#f8f9fa;">
+                    <th style="border:1px solid #ddd; padding:6px; text-align:left;">Mã môn</th>
+                    <th style="border:1px solid #ddd; padding:6px; text-align:left;">Tên môn</th>
+                    <th style="border:1px solid #ddd; padding:6px; text-align:center;">Điểm</th>
+                </tr>
+            </thead>
+            <tbody id="modalMonHoc"></tbody>
+        </table>
+    </div>
+</div>
 
 <script src="navbar.js"></script>
 <script src="sinhvien.js"></script>
